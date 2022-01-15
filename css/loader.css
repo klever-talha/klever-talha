@@ -1,0 +1,58 @@
+.loader {
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.loaderImg{
+  width: 8rem;
+  margin-bottom: 12px;
+}
+.dots {
+  display: flex;
+}
+
+.dot {
+  margin: 10px;
+  width: 1rem;
+  height: 1rem;
+  background-color: #312323;
+  border-radius: 50%;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+.one {
+  animation-name: load-one;
+}
+
+@keyframes load-one {
+  30% {
+    transform: translateY(-50%);
+  }
+}
+
+.two {
+  animation-name: load-two;
+}
+
+@keyframes load-two {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
+.three {
+  animation-name: load-three;
+}
+
+@keyframes load-three {
+  70% {
+    transform: translateY(-50%);
+  }
+}

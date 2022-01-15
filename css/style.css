@@ -1,0 +1,437 @@
+
+@font-face {
+    font-family: jost;
+    src:url("../fonts/jost.ttf");
+}
+@font-face {
+    font-family: Righteous;
+    src:url("../fonts/righteous.ttf");
+}
+@font-face {
+    font-family: Staatliches;
+    src:url("../fonts/Staatliches.ttf");
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    overflow-x: hidden;
+}
+.cover {
+    display: block;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 80%;
+}
+.logo{
+    font-size: 1.3rem;
+    font-family: Staatliches, cursive;
+    letter-spacing: 0.1rem;
+}
+.navLinks{
+    font-size: 1rem;
+    font-family: Jost, sans-serif;
+    font-weight: bold;
+}
+.navLinks>a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0 0.2rem 0 0.2rem;
+}
+#character {
+    position: relative;
+    width: 30rem;
+    /* To change model size, change this in rem */
+    height: 20rem;
+  }
+  
+  .scene,
+  canvas {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 53%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+  }
+  #character {
+      display: none;
+  }
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+h1{
+    font-family: Righteous, cursive;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.tagline{
+    display: flex;
+    justify-content: center;
+    font-family: Jost, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    overflow: hidden;
+    color: black;
+    height: 1.8rem;
+    
+}
+.tagline>p{
+    margin: 0; 
+}
+.tagline>div>ul{
+    list-style: none;
+    animation: change 10s infinite ;
+    padding: 0;
+
+}
+.tagline>div>ul>li{
+    padding-left: 0.5rem;
+    margin:0;
+}
+section{
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    width: 80%;
+}
+section>img{
+    display: block;
+    width: 15rem;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+}
+section>div>h1{
+    font-family: Righteous, cursive;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 0 0.6rem 0;
+}
+section>div>p{
+    font-family: Jost, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0 0 0.6rem 0;
+}
+.fill{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.063;
+    padding: 0.3rem 1.2rem 0.3rem;
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+
+}
+.fill::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 4px;
+    left: 4px;
+    transition: 0.2s;
+  }
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+
+  .imgOne{
+      transform: translate(-150%, 0);
+      animation: img 1.2s forwards;
+  }
+  .textBoxOne{
+    transform: translate(-150%, 0);
+    animation: textBox 1.2s forwards;
+  }
+  .imgTwo{
+      transform: translate(-300%, 0);
+  }
+  .textBoxTwo{
+    transform: translate(-300%, 0);
+  }
+  .imgThree{
+      transform: translate(-300%, 0);
+  }
+  .textBoxThree{
+    transform: translate(-300%, 0);
+  }
+
+  @keyframes img {
+    to {
+        transform: translate(0, 0);
+    
+      }
+  }
+  @keyframes textBox {
+    to {
+        transform: translate(0, 0);
+    
+      }
+  }
+
+  @keyframes change {
+    0%, 30.33%, 100% {transform:translate3d(0,0,0);}
+    33.33%, 60.66% {transform:translate3d(0,-34%,0);}
+    63.66%,90.99% {transform:translate3d(0,-67%,0);}
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 800px){
+      .logo{
+          font-size: 2rem;
+          margin: 1rem 0;
+      }
+      .navLinks{
+          font-size: 1.5rem;
+      }
+      .intro>h1{
+          font-size: 3rem;
+      }
+      .tagline{
+          font-size: 2rem;
+          height: 3rem;
+      }
+      .tagline>div>ul>li{
+        padding-left: 0.7rem;
+      }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section>img{
+        width: 20rem;
+        padding: 0 2rem;
+    }
+    section>div{
+        width: 50%;
+    }
+    section>div>h1{
+        font-size: 1.5rem;
+        margin: 0 0 1rem 0;
+    }
+    section>div>p{
+        font-size: 0.9rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .fill{
+        font-size: 0.9rem;
+    }
+    .inverted {
+        position: relative;
+        justify-content: flex-start;
+    }
+    .inverted>img {
+        position: absolute;
+        left: 50%;
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 1400px){
+    #character {
+        display: block;
+    }
+      .logo{
+          font-size: 2.5rem;
+          margin: 1rem 0;
+      }
+      .navLinks{
+          font-size: 2rem;
+      }
+      .navLinks>a{
+        margin: 0 0.3rem 0 0.3rem;
+      }
+      .intro{
+        margin: 0 0 2rem 0;
+      }
+      .intro>h1{
+          font-size: 3.5rem;
+      }
+      .tagline{
+          font-size: 2.5rem;
+          height: 3.5rem;
+      }
+      .tagline>div>ul>li{
+        padding-left: 0.9rem;
+      }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section>img{
+        width: 25rem;
+        padding: 0 2rem;
+    }
+    section>div{
+        width: 50%;
+    }
+    section>div>h1{
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+    }
+    section>div>p{
+        font-size: 1.2rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .fill{
+        font-size: 1.2rem;
+    }
+    .inverted {
+        position: relative;
+        justify-content: flex-start;
+    }
+    .inverted>img {
+        position: absolute;
+        left: 55%;
+    }
+  }
+
+  @media screen and (min-width: 1400px) and (max-width: 1800px){
+    #character {
+        display: block;
+    }
+    .logo{
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    .navLinks{
+        font-size: 2.5rem;
+    }
+    .navLinks>a{
+      margin: 0 0.3rem 0 0.3rem;
+    }
+    .intro{
+        margin: 0 0 2rem 0;
+      }
+    .intro>h1{
+        font-size: 4rem;
+    }
+    .tagline{
+        font-size: 2.8rem;
+        height: 4rem;
+    }
+    .tagline>div>ul>li{
+        padding-left: 1.1rem;
+      }
+  section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  section>img{
+      width: 35rem;
+      padding: 0 2rem;
+  }
+  section>div{
+      width: 50%;
+  }
+  section>div>h1{
+      font-size: 2.5rem;
+      margin: 0 0 1rem 0;
+  }
+  section>div>p{
+      font-size: 1.5rem;
+    margin: 0 0 0.7rem 0;
+  }
+  .fill{
+      font-size: 1.5rem;
+  }
+  .inverted {
+      position: relative;
+      justify-content: flex-start;
+  }
+  .inverted>img {
+      position: absolute;
+      left: 55%;
+  }
+}
+
+@media screen and (min-width: 1800px){
+    #character {
+        display: block;
+    }
+    .logo{
+        font-size: 4.5rem;
+        margin: 2rem 0;
+    }
+    .navLinks{
+        font-size: 3.5rem;
+    }
+    .navLinks>a{
+      margin: 0 0.5rem 0 0.5rem;
+    }
+    .intro{
+        margin: 0 0 2rem 0;
+      }
+    .intro>h1{
+        font-size: 5.5rem;
+    }
+    .tagline{
+        font-size: 3.5rem;
+        height: 4.5rem;
+    }
+    .tagline>div>ul>li{
+        padding-left: 1.3rem;
+      }
+  section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  section>img{
+      width: 45rem;
+      padding: 0 2rem;
+  }
+  section>div{
+      width: 50%;
+  }
+  section>div>h1{
+      font-size: 3.5rem;
+      margin: 0 0 1rem 0;
+  }
+  section>div>p{
+      font-size: 2.5rem;
+    margin: 0 0 0.8rem 0;
+  }
+  .fill{
+      font-size: 2.5rem;
+  }
+  .inverted {
+      position: relative;
+      justify-content: flex-start;
+  }
+  .inverted>img {
+      position: absolute;
+      left: 55%;
+  }
+}
