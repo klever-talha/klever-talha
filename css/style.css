@@ -63,11 +63,11 @@ nav {
   .scene,
   canvas {
     position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 53%;  
-    left: 50%; 
-    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    left: 50%;
+    top: 19%;  
+    transform: translate(-50%, -19%);
 
   }
   #character {
