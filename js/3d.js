@@ -9,6 +9,7 @@ var renderer = new THREE.WebGLRenderer({
   antialias: true,
   alpha: true
 });
+renderer.outputEncoding = THREE.sRGBEncoding
 
 //camera
 var camera = new THREE.PerspectiveCamera(10, 1, 1, 1000);
@@ -19,12 +20,12 @@ var canvas = renderer.domElement;
 document.querySelector('#character').appendChild(canvas);
 
 //light
-const light = new THREE.AmbientLight( 0x222222, 2.5 ); // soft white light
+const light = new THREE.AmbientLight( 0x222222, 1 ); // soft white light
 scene.add( light );
 
 const spotLight = new THREE.SpotLight( 0xffffff );
 spotLight.position.set( 0.788, 1.547, 6.26 );
-spotLight.castShadow = false;
+spotLight.castShadow = true;
 scene.add( spotLight );
 
 //gltf loader
