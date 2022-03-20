@@ -50,8 +50,8 @@ function onMouseMove(event){
   raycaster.setFromCamera(mouse, camera);
   raycaster.ray.intersectPlane(plane, pointOfIntersection);
   base.lookAt(pointOfIntersection);
-  console.log(mouse.x)
-  console.log(mouse.y)
+  // console.log(mouse.x)
+  // console.log(mouse.y)
 }
 
 renderer.setAnimationLoop(() => {
