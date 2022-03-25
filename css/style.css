@@ -68,7 +68,6 @@ nav {
     left: 50%;
     top: 19%;  
     transform: translate(-50%, -19%);
-
   }
   #character {
       display: none;
@@ -96,7 +95,6 @@ h1{
     overflow: hidden;
     color: black;
     height: 1.8rem;
-    
 }
 .tagline>p{
     margin: 0; 
@@ -105,7 +103,6 @@ h1{
     list-style: none;
     animation: change 10s infinite ;
     padding: 0;
-
 }
 .tagline>div>ul>li{
     padding-left: 0.5rem;
@@ -190,13 +187,11 @@ section>div>p{
   @keyframes img {
     to {
         transform: translate(0, 0);
-    
       }
   }
   @keyframes textBox {
     to {
         transform: translate(0, 0);
-    
       }
   }
 
@@ -271,7 +266,7 @@ section>div>p{
         margin: 0 0.3rem 0 0.3rem;
       }
       .intro{
-        margin: 0 0 2rem 0;
+        margin: 0 0 4rem 0;
       }
       .intro>h1{
           font-size: 3.5rem;
@@ -317,8 +312,20 @@ section>div>p{
   }
 
   @media screen and (min-width: 1400px) and (max-width: 1800px){
+    .scene,
+    canvas {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      left: 50%;
+      top: 19%;  
+      transform: translate(-50%, -19%);
+  
+    }
     #character {
         display: block;
+        width: 30rem;
+        height: 22rem;
     }
     .logo{
         font-size: 3rem;
@@ -331,7 +338,7 @@ section>div>p{
       margin: 0 0.3rem 0 0.3rem;
     }
     .intro{
-        margin: 0 0 2rem 0;
+        margin: 0 0 5rem 0;
       }
     .intro>h1{
         font-size: 4rem;
@@ -377,28 +384,37 @@ section>div>p{
 }
 
 @media screen and (min-width: 1800px){
+    .scene,
+    canvas {
+      position: absolute;
+      width: 750px;
+      height: 750px;
+  
+    }
     #character {
         display: block;
+        width: 40rem;
+        height: 35rem;
     }
     .logo{
         font-size: 4.5rem;
         margin: 2rem 0;
     }
     .navLinks{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
     .navLinks>a{
       margin: 0 0.5rem 0 0.5rem;
     }
     .intro{
-        margin: 0 0 2rem 0;
+        margin: 0 0 3.5rem 0;
       }
     .intro>h1{
-        font-size: 5.5rem;
+        font-size: 6.5rem;
     }
     .tagline{
-        font-size: 3.5rem;
-        height: 4.5rem;
+        font-size: 4rem;
+        height: 5.5rem;
     }
     .tagline>div>ul>li{
         padding-left: 1.3rem;
