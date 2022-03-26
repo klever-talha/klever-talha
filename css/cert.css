@@ -66,7 +66,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .certificate-img{
     width: 300px;
@@ -97,7 +97,7 @@ header{
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.063;
-    padding: 0.3rem 1.2rem 0.3rem;
+    padding: 0.3rem 1.2rem;
     outline: 0;
     border: 1px solid black;
     color: black;
@@ -116,7 +116,7 @@ header{
     height: 100%;
     top: 4px;
     left: 4px;
-    transition: 0.2s;
+
   }
   .fill:hover::after {
     top: 0px;
@@ -153,16 +153,8 @@ header{
     }
     .fill{
         font-size: 1.2rem;
-        font-weight: 400;
         letter-spacing: 0.063;
-        padding: 0.3rem 1.2rem 0.3rem;
-        outline: 0;
-        border: 1px solid black;
-        color: black;
-        cursor: pointer;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0);
-        display: block;
+        padding: 0.25rem 1.8rem;
     
     }
     
@@ -202,16 +194,8 @@ header{
     }
     .fill{
         font-size: 1.4rem;
-        font-weight: 400;
         letter-spacing: 0.063;
-        padding: 0.3rem 1.2rem 0.3rem;
-        outline: 0;
-        border: 1px solid black;
-        color: black;
-        cursor: pointer;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0);
-        display: block;
+        padding: 0.25rem 2.2rem ;
     
     }
 
@@ -251,18 +235,14 @@ header{
     }
     .fill{
         font-size: 1.6rem;
-        font-weight: 400;
         letter-spacing: 0.063;
-        padding: 0.3rem 1.2rem 0.3rem;
-        outline: 0;
-        border: 1px solid black;
-        color: black;
-        cursor: pointer;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0);
-        display: block;
+        padding: 0.3rem 2.5rem;
     
     }
+    .fill::after {
+        top: 5px;
+        left: 5px;
+      }
 
   }
 
@@ -307,32 +287,12 @@ header{
     }
     .fill{
         font-size: 2.2rem;
-        font-weight: 400;
-        letter-spacing: 0.063;
-        padding: 0.3rem 1.2rem 0.3rem;
-        outline: 0;
-        border: 1px solid black;
-        color: black;
-        cursor: pointer;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0);
-        display: block;
-    
+        padding: 0.5rem 3.5rem;   
     }
     .fill::after {
-        content: "";
-        background-color: #ffe54c;
-        width: 100%;
-        z-index: -1;
-        position: absolute;
-        height: 100%;
-        top: 6px;
-        left: 6px;
-        transition: 0.2s;
-      }
-      .fill:hover::after {
-        top: 0px;
-        left: 0px;
+        top: 8px;
+        left: 8px;
+
       }
 
   }
