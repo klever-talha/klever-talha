@@ -63,4 +63,4 @@ for(let i = 0; i < click.length; i++){
  promptBtn.addEventListener('click', function(){
      maintenance.style.display = 'none';
          blur.style.filter = 'blur(0px)';
-// })
+})
