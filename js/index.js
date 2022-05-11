@@ -45,7 +45,7 @@ document.addEventListener('scroll', function () {
     
 });
 
-//maintaince prompt
+// //maintaince prompt
 
 // let maintenance = document.querySelector(".maintenancePrompt");
 // let click = document.querySelectorAll(".notice");

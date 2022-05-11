@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/loader.css">
 </head>
+
 <body>
 
     <div class="loader">
@@ -17,51 +19,63 @@
             <div class="one dot"></div>
             <div class="two dot"></div>
             <div class="three dot"></div>
-   </div></div>
-<header>
-<nav class="navbar">
-    <div class="logo">
-        <span><span><a href="index.html">Klever Talha</a></span></span>
+        </div>
     </div>
-    <div class="navLinks">
-        <a href="certificate.html">Certificates</a>
-        <a class="notice" href="Projects.html">Projects</a>
-    </div>
-</nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span><span><a href="index.html">Klever Talha</a></span></span>
+            </div>
+            <div class="navLinks">
+                <a href="certificate.html">Certificates</a>
+                <a class="notice" href="Projects.html">Projects</a>
+            </div>
+        </nav>
+    </header>
 
-    <section class="projects">
+    <section id="projects">
         <div class="project">
-            <img class = "project-img" src="res/dca.jpg" alt="Talha Shaheen">
-            <div class="over-ride">
-                <h1>DCA Calculator</h1>
-                <button class="fill notice"><a href="https://klever-talha-projects.github.io/dca" target="_blank">View</a></button>
+            <div class="project-details">
+                <div class="heading">
+                    <h1>TOOLS</h1>
+                    <p>Develpore tools</p>
+                </div>
+                <div class="short-explaination">
+                    <p>A bunch of tools for developers that I personally use.A bunch of tools for developers that I personally use.A bunch of tools for developers that I personally use.</p>
+                    <button class="fill"><a href="Projects.html">View Project</a></button>
+                </div>
             </div>
+            <img class="project-imgs" src="res\3d-model.jpg" alt="">
         </div>
         <div class="project">
-            <img class = "project-img" src="res/3d-model.jpg" alt="Talha Shaheen">
-            <div class="over-ride">
-                <h1>3D Model javascript</h1>
-                <button class="fill notice"><a href="https://klever-talha-projects.github.io/3d-model" target="_blank">View</a></button>
+            <hr>
+            <div class="project-details">
+                <div class="heading">
+                    <h1>TOOLS</h1>
+                    <p>Develpore tools</p>
+                </div>
+                <div class="short-explaination">
+                    <p>A bunch of tools for developers that I personally use.A bunch of tools for developers that I personally use.A bunch of tools for developers that I personally use.</p>
+                    <button class="fill"><a href="Projects.html">View Project</a></button>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <img class = "project-img" src="res/3d-model.jpg" alt="Talha Shaheen">
-            <div class="over-ride">
-                <h1>SEO Expert</h1>
-                <button class="fill notice">View</button>
-            </div>
+            <img class="project-imgs" src="res\3d-model.jpg" alt="">
         </div>
     </section>
 
-    <script>document.onselectstart = function(){
-        return false;
-    }
-    let loader = document.querySelector('.loader');
-    window.onload = function () {
-        setTimeout(() => {
-            loader.parentNode.removeChild(loader);
-        }, 2000);
-    };</script>
+    
+
+    <script>
+        document.onselectstart = function () {
+            return false;
+        }
+        let loader = document.querySelector('.loader');
+        window.onload = function () {
+            setTimeout(() => {
+                loader.parentNode.removeChild(loader);
+            }, 2000);
+        };
+    </script>
 </body>
+
 </html>
