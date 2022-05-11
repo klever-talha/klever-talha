@@ -47,20 +47,20 @@ document.addEventListener('scroll', function () {
 
 // //maintaince prompt
 
-// let maintenance = document.querySelector(".maintenancePrompt");
-// let click = document.querySelectorAll(".notice");
-// let blur = document.querySelector(".cover");
+let maintenance = document.querySelector(".maintenancePrompt");
+let click = document.querySelectorAll(".notice");
+let blur = document.querySelector(".cover");
 
 
-// for(let i = 0; i < click.length; i++){
-//     click[i].addEventListener('click', function () {
-//         maintenance.style.display = 'flex';
-//         blur.style.filter = 'blur(8px)';
-//     });
-// }
+for(let i = 0; i < click.length; i++){
+     click[i].addEventListener('click', function () {
+         maintenance.style.display = 'flex';
+       blur.style.filter = 'blur(8px)';
+    });
+ }
 
-// let promptBtn = document.querySelector(".promptBtn");
-// promptBtn.addEventListener('click', function(){
-//     maintenance.style.display = 'none';
-//         blur.style.filter = 'blur(0px)';
-// })
+ let promptBtn = document.querySelector(".promptBtn");
+ promptBtn.addEventListener('click', function(){
+     maintenance.style.display = 'none';
+         blur.style.filter = 'blur(0px)';
+})
