@@ -198,12 +198,12 @@ header{
         font-size: 35px;
     }
     .heading>p{
-        font-size: 19px;
+        font-size: 21px;
         margin-bottom: 15px;
         color: rgb(87, 87, 87);
     }
     .short-explaination>p{
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 8px;
     
     }
@@ -259,27 +259,27 @@ header{
       margin: 0 0.3rem 0 0.3rem;
     }
     h1{
-        font-size: 40px;
+        font-size: 45px;
     }
     .heading>p{
-        font-size: 21px;
+        font-size: 24px;
         margin-bottom: 15px;
         color: rgb(87, 87, 87);
     }
     .short-explaination>p{
-        font-size: 22px;
+        font-size: 25px;
         margin-bottom: 8px;
     
     }
     #projects{
-        margin-top: 40px;
+        margin-top: 120px;
         width: 80%;
     }
     .project{
         margin-bottom: 40px;
     }
     .project-imgs{
-        margin-top: 30px;
+        margin-top: 50px;
         width: 100%;
     }
     .project-details{
@@ -319,16 +319,43 @@ header{
       margin: 0 0.5rem 0 0.5rem;
     }
     h1{
-        font-size: 80px;
+        font-size: 65px;
+    }
+    .heading>p{
+        font-size: 34px;
         margin-bottom: 15px;
+        color: rgb(87, 87, 87);
+    }
+    .short-explaination>p{
+        font-size: 35px;
+        margin-bottom: 8px;
+    
+    }
+    #projects{
+        margin-top: 120px;
+        width: 80%;
+    }
+    .project{
+        margin-bottom: 40px;
+    }
+    .project-imgs{
+        margin-top: 80px;
+        width: 100%;
+    }
+    .project-details{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    hr{
+        margin: 160px 0;
     }
     .fill{
-        font-size: 2.6rem;
+        font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: 0.063;
-        padding: 0.3rem 1.2rem 0.3rem;
+        padding: 0.6rem 1.6rem;
         outline: 0;
-        border: 2px solid black;
+        border: 1px solid black;
         color: black;
         cursor: pointer;
         position: relative;
@@ -336,16 +363,5 @@ header{
         display: block;
     
     }
-    .fill::after {
-        content: "";
-        background-color: #ffe54c;
-        width: 100%;
-        z-index: -1;
-        position: absolute;
-        height: 100%;
-        top: 8px;
-        left: 8px;
-        transition: 0.2s;
-      }
 
   }
