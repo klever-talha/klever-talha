@@ -18,6 +18,7 @@
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 body{
     overflow-x: hidden;
@@ -86,6 +87,13 @@ h1{
     font-weight: bold;
     font-size: 2.2rem;
 }
+p{
+    font-family: Jost, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0 0 0.6rem 0;
+}
 .tagline{
     display: flex;
     justify-content: center;
@@ -97,6 +105,7 @@ h1{
     height: 1.8rem;
 }
 .tagline>p{
+    font-size: 1.2rem;
     margin: 0; 
 }
 .tagline>div>ul{
@@ -119,19 +128,117 @@ section>img{
     text-align: center;
     margin: 0 auto 1rem auto;
 }
-section>div>h1{
+.hire-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100 auto 0 auto;
+    margin-bottom: 40px;
+    color: #24292e;
+}
+.klever-coder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #24292e;
+    padding: 50px 10px;
+}
+.klever-coder>h2{
+    color: white;
+}
+.klever-coder>p{
+    text-align: center;
+    color: white;
+}
+h2{
     font-family: Righteous, cursive;
     letter-spacing: 0.1rem;
     font-weight: bold;
     font-size: 1.3rem;
     margin: 0 0 0.6rem 0;
 }
-section>div>p{
-    font-family: Jost, sans-serif;
-    font-size: medium;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin: 0 0 0.6rem 0;
+.merchandise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6a737d;
+    padding: 50px 10px;
+}
+.merchandise>img{
+    width: 250px;
+}
+.merchandise div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.merchandise p{
+    color: white;
+}
+.social-menu{
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social-menu ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #1dbf73;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #6fda44;
+}
+.iconify{
+    width: 25px;
+    height: 25px;
 }
 .fill{
     font-size: 0.9rem;
@@ -161,6 +268,17 @@ section>div>p{
   .fill:hover::after {
     top: 0px;
     left: 0px;
+  }
+
+  .fill-2{
+    color: white;
+    font-size: 18px;
+    padding: 5px 20px;
+    background: none;
+    border: solid 2px white;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
   }
 
   .imgOne{
@@ -209,8 +327,15 @@ section>div>p{
       .navLinks{
           font-size: 1.5rem;
       }
+      p{
+        font-size: 0.9rem;
+      margin: 0 0 0.5rem 0;
+    }
       .intro>h1{
           font-size: 3rem;
+      }
+      .tagline>p{
+        font-size: 2rem;
       }
       .tagline{
           font-size: 2rem;
@@ -231,16 +356,16 @@ section>div>p{
     section>div{
         width: 50%;
     }
-    section>div>h1{
+    h2{
         font-size: 1.5rem;
         margin: 0 0 1rem 0;
     }
-    section>div>p{
-        font-size: 0.9rem;
-      margin: 0 0 0.5rem 0;
-    }
+
     .fill{
         font-size: 0.9rem;
+    }
+    .fill-2{
+        margin-top: 30px;
     }
     .inverted {
         position: relative;
@@ -290,16 +415,22 @@ section>div>p{
     section>div{
         width: 50%;
     }
-    section>div>h1{
+    h2{
         font-size: 2rem;
         margin: 0 0 1rem 0;
     }
-    section>div>p{
+    p{
         font-size: 1.2rem;
       margin: 0 0 0.5rem 0;
     }
+    .tagline>p{
+        font-size: 2.5rem;
+    }
     .fill{
         font-size: 1.2rem;
+    }
+    .fill-2{
+        margin-top: 20px;
     }
     .inverted {
         position: relative;
@@ -308,6 +439,15 @@ section>div>p{
     .inverted>img {
         position: absolute;
         left: 55%;
+    }
+    .merchandise{
+        flex-direction: row;
+    }
+    .merchandise img{
+        width: 300px;
+    }
+    .hire-txt{
+        margin-bottom: 60px;
     }
   }
 
@@ -362,16 +502,25 @@ section>div>p{
   section>div{
       width: 50%;
   }
-  section>div>h1{
+  h2{
       font-size: 2.5rem;
       margin: 0 0 1rem 0;
   }
-  section>div>p{
+  p{
       font-size: 1.5rem;
     margin: 0 0 0.7rem 0;
   }
+  .tagline>p{
+    font-size: 2.8rem;
+}
   .fill{
       font-size: 1.5rem;
+  }
+  .fill-2{
+    font-size: 20px;
+    padding: 6px 22px;
+    background: none;
+
   }
   .inverted {
       position: relative;
@@ -381,6 +530,16 @@ section>div>p{
       position: absolute;
       left: 55%;
   }
+  .merchandise{
+    flex-direction: row;
+}
+.merchandise img{
+    width: 300px;
+}
+.social-menu ul li a{
+    width: 80px;
+    height: 80px;
+}
 }
 
 @media screen and (min-width: 1800px){
@@ -431,16 +590,26 @@ section>div>p{
   section>div{
       width: 50%;
   }
-  section>div>h1{
+  h2{
       font-size: 3.5rem;
       margin: 0 0 1rem 0;
   }
-  section>div>p{
+  p{
       font-size: 2.5rem;
     margin: 0 0 0.8rem 0;
   }
+  .tagline>p{
+    font-size: 4rem;
+}
   .fill{
       font-size: 2.5rem;
+  }
+  .fill-2{
+    font-size: 22px;
+    padding: 8px 28px;
+    background: none;
+    border: solid 2px white;
+    border-radius: 100px;
   }
   .inverted {
       position: relative;
@@ -450,4 +619,17 @@ section>div>p{
       position: absolute;
       left: 55%;
   }
+  .merchandise{
+    flex-direction: row;
+}
+.merchandise img{
+    width: 400px;
+}
+.hire-txt{
+    margin-bottom: 100px;
+}
+.social-menu ul li a{
+    width: 120px;
+    height: 120px;
+}
 }
