@@ -332,6 +332,35 @@ h2{
     margin-top: 20px;
     cursor: pointer;
   }
+  .fill3{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.063;
+    padding: 0.3rem 1.2rem 0.3rem;
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+
+}
+.fill3::after {
+    content: "";
+    background-color: #f74141;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 4px;
+    left: 4px;
+    transition: 0.2s;
+  }
+  .fill3:hover::after {
+    top: 0px;
+    left: 0px;
+  }
 
   .imgOne{
       transform: translate(-150%, 0);
@@ -418,6 +447,12 @@ h2{
     }
     .fill-2{
         margin-top: 30px;
+    }
+    .fill3{
+        font-size: 0.9rem;
+    }
+    .fill3::after{
+        background-color: #f74141;
     }
     .inverted {
         position: relative;
@@ -520,6 +555,12 @@ h2{
     }
     .fill-2{
         margin-top: 20px;
+    }
+    .fill3{
+        font-size: 1.2rem;
+    }
+    .fill3::after{
+        background-color: #f74141;
     }
     .inverted {
         position: relative;
@@ -651,6 +692,12 @@ h2{
     background: none;
 
   }
+  .fill3{
+    font-size: 1.5rem;
+}
+.fill3::after{
+    background-color: #f74141;
+}
   .inverted {
       position: relative;
       justify-content: flex-start;
@@ -780,6 +827,13 @@ h2{
     border: solid 2px white;
     border-radius: 100px;
   }
+  .fill3{
+    font-size: 2.5rem;
+
+}
+.fill3::after{
+    background-color: #f74141;
+}
   .inverted {
       position: relative;
       justify-content: flex-start;
