@@ -240,6 +240,58 @@ h2{
     width: 25px;
     height: 25px;
 }
+.header-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-background{
+    position: absolute;
+    bottom: -40px;
+    z-index: -1;
+    font-size: 70px;
+    opacity: 10%;
+}
+.text-foreground{
+    font-size: 30px;
+}
+.underline::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: #808080;
+    transform: translateX(-50%);
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: #ffe54c;
+    transform: translateX(-50%);
+}
+.resume{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.resume-detail{
+    margin-top: 20px;
+}
+.resume-detail button{
+    margin-top: 30px;
+}
+.profile{
+    width: 250px;
+    margin: 30px auto;
+}
+.profile img{
+    width: 100%;
+}
 .fill{
     font-size: 0.9rem;
     font-weight: 400;
@@ -375,6 +427,43 @@ h2{
         position: absolute;
         left: 50%;
     }
+    .text-background{
+        bottom: -45px;
+        font-size: 75px;
+    }
+    .text-foreground{
+        font-size: 35px;
+    }
+    .underline::before{
+        width: 120px;
+        height: 2px;
+    }
+    .underline::after{
+        width: 50px;
+        height: 2px;
+    }
+    .resume{
+        display: flex;
+        flex-direction: column;
+    }
+    .resume-detail{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .resume-detail button{
+        margin-top: 30px;
+    }
+    .profile{
+        width: 280px;
+        margin: 30px 30px;
+    }
+    .profile img{
+        width: 100%;
+    }
   }
   @media screen and (min-width: 800px) and (max-width: 1400px){
     #character {
@@ -448,6 +537,46 @@ h2{
     }
     .hire-txt{
         margin-bottom: 60px;
+    }
+    .text-background{
+        bottom: -45px;
+        font-size: 75px;
+    }
+    .text-foreground{
+        font-size: 35px;
+    }
+    .underline::before{
+        width: 120px;
+        height: 2px;
+    }
+    .underline::after{
+        width: 50px;
+        height: 2px;
+    }
+    .resume{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .resume-detail{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .resume-detail button{
+        margin-top: 30px;
+    }
+    .profile{
+        width: 350px;
+        margin: 30px 30px;
+    }
+    .profile img{
+        width: 100%;
     }
   }
 
@@ -540,6 +669,46 @@ h2{
     width: 80px;
     height: 80px;
 }
+.text-background{
+    bottom: -40px;
+    font-size: 80px;
+}
+.text-foreground{
+    font-size: 45px;
+}
+.underline::before{
+    width: 150px;
+    height: 3px;
+}
+.underline::after{
+    width: 60px;
+    height: 3px;
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.resume-detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+}
+.resume-detail button{
+    margin-top: 30px;
+}
+.profile{
+    width: 420px;
+    margin: 30px 30px;
+}
+.profile img{
+    width: 100%;
+}
 }
 
 @media screen and (min-width: 1800px){
@@ -631,5 +800,45 @@ h2{
 .social-menu ul li a{
     width: 120px;
     height: 120px;
+}
+.text-background{
+    bottom: -55px;
+    font-size: 130px;
+}
+.text-foreground{
+    font-size: 80px;
+}
+.underline::before{
+    width: 250px;
+    height: 4px;
+}
+.underline::after{
+    width: 100px;
+    height: 4px;
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+.resume-detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+}
+.resume-detail button{
+    margin-top: 30px;
+}
+.profile{
+    width: 620px;
+    margin: 30px 30px;
+}
+.profile img{
+    width: 100%;
 }
 }
