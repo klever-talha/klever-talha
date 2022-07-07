@@ -7,8 +7,8 @@
     z-index: 1;
     background-color: white;
     border-radius: 1.5rem;
-    width: 30vh;
-    height: 30vh;
+    width: 50vh;
+    height: 50vh;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.2);
     display: none;
     flex-direction: column;
@@ -58,5 +58,44 @@
     left: 0px;
   }
 
+  @media screen and (min-width: 640px) and (max-width: 800px){
+    .maintenancePrompt {
+      width: 50vh;
+      height: 40vh;
+    }
+
+  }
+  @media screen and (min-width: 800px) and (max-width: 1400px){
+    .maintenancePrompt {
+      width: 50vh;
+      height: 50vh;
+    }
+  }
+  @media screen and (min-width: 1400px) and (max-width: 1800px){
+    .maintenancePrompt {
+      width: 50vh;
+      height: 50vh;
+    }
+  }
+  @media screen and (min-width: 1800px){
+    .maintenancePrompt {
+      width: 50vh;
+      height: 50vh;
+    }
+    .maintenancePrompt>span {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .promptBtn {
+      font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.063;
+    padding: 0.6rem 2rem;
+    }
+    .promptBtn::after {
+      top: 8px;
+      left: 8px;
+    }
+  }
 
   
