@@ -78,8 +78,8 @@ header{
     width: 300px;
     border-radius: 15px;
     border: 3px solid #181818;
-    box-shadow: 0 0 15px 0px #888888;
-    filter: blur(5px);
+    box-shadow: 0 0 10px 0px #888888;
+    filter: blur(2px);
 }
 
 .over-ride{
@@ -164,15 +164,15 @@ header{
     opacity: 0;
 }
 .skill-per.css{
-    width: 70%;
+    width: 95%;
     animation-delay: 4.2s;
 }
 .skill-per.javascript{
-    width: 50%;
+    width: 80%;
     animation-delay: 4.4s;
 }
 .skill-per.nodejs{
-    width: 30%;
+    width: 50%;
     animation-delay: 4.6s;
 }
 @keyframes progress {
@@ -269,8 +269,8 @@ header{
         width: 500px;
         border-radius: 20px;
         border: 4px solid black;
-        box-shadow: 0 0 20px 0px #888888;
-        filter: blur(5px);
+        box-shadow: 0 0 15px 0px #888888;
+        filter: blur(2px);
     }
     h1{
         font-size: 30px;
@@ -343,8 +343,8 @@ header{
         width: 800px;
         border-radius: 25px;
         border: 5px solid black;
-        box-shadow: 0 0 30px 0px #888888;
-        filter: blur(6px);
+        box-shadow: 0 0 20px 0px #888888;
+        filter: blur(3px);
     }
     h1{
         font-size: 36px;
@@ -421,8 +421,8 @@ header{
         width: 850px;
         border-radius: 25px;
         border: 6px solid black;
-        box-shadow: 0 0 35px 0px #888888;
-        filter: blur(7px);
+        box-shadow: 0 0 25px 0px #888888;
+        filter: blur(4px);
     }
     h1{
         font-size: 45px;
@@ -512,7 +512,7 @@ header{
         border-radius: 35px;
         border: 8px solid black;
         box-shadow: 0 0 30px 0px #888888;
-        filter: blur(10px);
+        filter: blur(5px);
     }
     h1{
         font-size: 65px;
