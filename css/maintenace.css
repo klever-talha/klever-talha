@@ -7,8 +7,8 @@
     z-index: 1;
     background-color: white;
     border-radius: 1.5rem;
-    width: 50vh;
-    height: 50vh;
+    width: 40vh;
+    height: 40vh;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.2);
     display: none;
     flex-direction: column;
@@ -17,6 +17,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    padding: 0 10px;
     transform: translate(-50%, -50%);
   }
   .maintenancePrompt>span {
@@ -60,27 +61,24 @@
 
   @media screen and (min-width: 640px) and (max-width: 800px){
     .maintenancePrompt {
-      width: 50vh;
-      height: 40vh;
+      padding: 0 10px;
     }
 
   }
   @media screen and (min-width: 800px) and (max-width: 1400px){
     .maintenancePrompt {
-      width: 50vh;
-      height: 50vh;
+      padding: 0 10px;
     }
   }
   @media screen and (min-width: 1400px) and (max-width: 1800px){
     .maintenancePrompt {
-      width: 50vh;
-      height: 50vh;
+ 
     }
   }
   @media screen and (min-width: 1800px){
     .maintenancePrompt {
-      width: 50vh;
-      height: 50vh;
+      width: 40vh;
+      height: 40vh;
     }
     .maintenancePrompt>span {
       font-size: 3rem;
