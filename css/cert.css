@@ -172,7 +172,7 @@ header{
     animation-delay: 4.4s;
 }
 .skill-per.nodejs{
-    width: 50%;
+    width: 80%;
     animation-delay: 4.6s;
 }
 @keyframes progress {
