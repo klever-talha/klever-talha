@@ -377,10 +377,22 @@ h2{
     transform: translate(-300%, 0);
   }
   .imgThree{
-      transform: translate(-300%, 0);
+      transform: translate(+300%, 0);
   }
   .textBoxThree{
+    transform: translate(+300%, 0);
+  }
+  .imgFour{
+      transform: translate(-300%, 0);
+  }
+  .textBoxFour{
     transform: translate(-300%, 0);
+  }
+  .imgFive{
+      transform: translate(+300%, 0);
+  }
+  .textBoxFive{
+    transform: translate(+300%, 0);
   }
 
   @keyframes img {

@@ -16,12 +16,18 @@ document.ready = function() {
 
 let sectionTwo = document.querySelector(".two");
 let sectionThree = document.querySelector(".thre");
+let sectionFour = document.querySelector(".four");
+let sectionFive = document.querySelector(".five");
 
 let imgTwo = document.querySelector(".imgTwo");
 let imgThree = document.querySelector(".imgThree");
+let imgFour = document.querySelector(".imgFour");
+let imgFive = document.querySelector(".imgFive");
 
 let textBoxTwo = document.querySelector(".textBoxTwo");
 let textBoxThree = document.querySelector(".textBoxThree");
+let textBoxFour = document.querySelector(".textBoxFour");
+let textBoxFive = document.querySelector(".textBoxFive");
 
 
 document.addEventListener('scroll', function () {
@@ -29,7 +35,7 @@ document.addEventListener('scroll', function () {
 
     const secondSectiony = sectionTwo.getBoundingClientRect().y;
     const secondSectionHeight = sectionTwo.getBoundingClientRect().height;
-    if (clientHeight > secondSectiony + secondSectionHeight * 1 / 3) {
+    if (clientHeight > secondSectiony + secondSectionHeight * 0.8) {
         imgTwo.style.animation = 'img .8s forwards';
         textBoxTwo.style.animation = 'textBox .8s forwards';
     }
@@ -37,9 +43,23 @@ document.addEventListener('scroll', function () {
 
     const thirdSectiony = sectionThree.getBoundingClientRect().y;
     const thirdSectionHeight = sectionThree.getBoundingClientRect().height;
-    if (clientHeight > thirdSectiony + thirdSectionHeight * 1 / 3) {
+    if (clientHeight > thirdSectiony + thirdSectionHeight * 0.8) {
         imgThree.style.animation = 'img .8s forwards';
         textBoxThree.style.animation = 'textBox .8s forwards';
+    }
+
+    const fourthSectiony = sectionFour.getBoundingClientRect().y;
+    const fourthSectionHeight = sectionFour.getBoundingClientRect().height;
+    if (clientHeight > fourthSectiony + fourthSectionHeight * 0.8) {
+        imgFour.style.animation = 'img .8s forwards';
+        textBoxFour.style.animation = 'textBox .8s forwards';
+    }
+
+    const FifthSectiony = sectionFive.getBoundingClientRect().y;
+    const FifthSectionHeight = sectionFive.getBoundingClientRect().height;
+    if (clientHeight > FifthSectiony + FifthSectionHeight * 0.8) {
+        imgFive.style.animation = 'img .8s forwards';
+        textBoxFive.style.animation = 'textBox .8s forwards';
     }
   
     
