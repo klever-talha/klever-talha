@@ -35,7 +35,7 @@ document.addEventListener('scroll', function () {
 
     const secondSectiony = sectionTwo.getBoundingClientRect().y;
     const secondSectionHeight = sectionTwo.getBoundingClientRect().height;
-    if (clientHeight > secondSectiony + secondSectionHeight * 0.8) {
+    if (clientHeight > secondSectiony + secondSectionHeight * 1/3) {
         imgTwo.style.animation = 'img .8s forwards';
         textBoxTwo.style.animation = 'textBox .8s forwards';
     }
@@ -43,21 +43,21 @@ document.addEventListener('scroll', function () {
 
     const thirdSectiony = sectionThree.getBoundingClientRect().y;
     const thirdSectionHeight = sectionThree.getBoundingClientRect().height;
-    if (clientHeight > thirdSectiony + thirdSectionHeight * 0.8) {
+    if (clientHeight > thirdSectiony + thirdSectionHeight * 1/3) {
         imgThree.style.animation = 'img .8s forwards';
         textBoxThree.style.animation = 'textBox .8s forwards';
     }
 
     const fourthSectiony = sectionFour.getBoundingClientRect().y;
     const fourthSectionHeight = sectionFour.getBoundingClientRect().height;
-    if (clientHeight > fourthSectiony + fourthSectionHeight * 0.8) {
+    if (clientHeight > fourthSectiony + fourthSectionHeight * 1/3) {
         imgFour.style.animation = 'img .8s forwards';
         textBoxFour.style.animation = 'textBox .8s forwards';
     }
 
     const FifthSectiony = sectionFive.getBoundingClientRect().y;
     const FifthSectionHeight = sectionFive.getBoundingClientRect().height;
-    if (clientHeight > FifthSectiony + FifthSectionHeight * 0.8) {
+    if (clientHeight > FifthSectiony + FifthSectionHeight * 1/3) {
         imgFive.style.animation = 'img .8s forwards';
         textBoxFive.style.animation = 'textBox .8s forwards';
     }

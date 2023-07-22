@@ -25,11 +25,14 @@ a {
 }
 
 body {
-    overflow-x: hidden;
+    width: 100vw !important; 
+    overflow-x: hidden !important;
 }
 
 .cover {
     display: block;
+    width: 100vw !important; 
+    overflow-x: hidden !important;
 }
 
 header {
