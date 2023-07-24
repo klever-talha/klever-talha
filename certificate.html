@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="certificate">
-            <img class = "certificate-img" src="res/html.webp" alt="Talha Shaheen">
+            <img class = "certificate-img" src="res/front-end-dev.webp" alt="Talha Shaheen">
             <div class="over-ride">
                 <h1>Frontend Certified</h1>
                 <button class="fill notice">View</button>
@@ -114,14 +114,46 @@
             </div>
         </div>
         <div class="certificate">
-            <img class = "certificate-img" src="res/seo.jpg" alt="Talha Shaheen">
+            <img class = "certificate-img" src="res/seo.webp" alt="Talha Shaheen">
             <div class="over-ride">
                 <h1>SEO Expert</h1>
                 <button class="fill notice">View</button>
             </div>
         </div>
     </section>
-
-    <script src="js/cert.js"></script>
 </body>
+
+<script>
+    document.onselectstart = function(){
+    return false;
+}
+let loader = document.querySelector('.loader');
+window.onload = function () {
+    setTimeout(() => {
+        loader.parentNode.removeChild(loader);
+    }, 0);
+};
+
+
+
+let overRide= document.querySelectorAll(".over-ride");
+let btn = document.querySelectorAll(".fill");
+let blur = document.querySelectorAll(".certificate-img");
+
+for(let i=0; i < btn.length; i++){
+    btn[i].addEventListener("click", ()=>{
+
+        hideOthers()
+
+        blur[i].classList.add('active')
+        overRide[i].classList.add('active')
+    });
+}
+
+function hideOthers(){
+    for(let i=0; i < btn.length; i++){
+    blur[i].classList.remove('active')
+    overRide[i].classList.remove('active')}
+}
+</script>
 </html>

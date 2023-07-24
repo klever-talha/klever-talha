@@ -270,15 +270,21 @@ h2 {
     margin: 0 15px;
 }
 
-.social-menu ul li .fab {
-    font-size: 30px;
-    line-height: 60px;
+.social-menu ul li img {
+    width: 42%;
     transition: .3s;
     color: #000;
 }
+.social-menu ul li:nth-child(2) img {
+    width: 32%;
+}
+.social-menu ul li:nth-child(3) img {
+    width: 45%;
+    padding-top: 10%;
+}
 
-.social-menu ul li .fab:hover {
-    color: #fff;
+.social-menu ul li:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .social-menu ul li a {
@@ -309,11 +315,6 @@ h2 {
 
 .social-menu ul li:nth-child(3) a:hover {
     background-color: #6fda44;
-}
-
-.iconify {
-    width: 25px;
-    height: 25px;
 }
 
 .header-text {
@@ -650,10 +651,6 @@ h2 {
         width: 100%;
     }
 
-    .iconify{
-        width: 20px;
-        height: 20px;
-    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1400px) {
@@ -829,10 +826,6 @@ h2 {
         padding-right: 300px;
     }
 
-    .iconify{
-        width: 25px;
-        height: 25px;
-    }
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1800px) {
@@ -1025,11 +1018,6 @@ h2 {
         padding-left: 350px;
         padding-right: 350px;
     }
-
-    .iconify{
-        width: 30px;
-        height: 30px;
-    }
 }
 
 @media screen and (min-width: 1800px) {
@@ -1210,11 +1198,6 @@ h2 {
 
     .clients-img-container>.clients-img>img{
         width: 190%;
-    }
-
-    .iconify{
-        width: 50px;
-        height: 50px;
     }
 
     .klever-coder{
