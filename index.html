@@ -23,6 +23,7 @@
 
     <!-- Google indexing -->
     <meta name="google-site-verification" content="jYG_7xzEc0iO8U7jn1NQqy_kwwFNZamE6nzl5FYia5U" />
+
     
 </head>
 
@@ -76,7 +77,7 @@
         </header>
 
         <section class="one">
-            <img class="imgOne" src="res\javascript-developer.svg" alt="Talha Shaheen" loading="lazy">
+            <img class="imgOne" src="res\javascript-developer.svg" alt="Talha Shaheen">
             <div class="textBoxOne">
                 <h2>JavaScript Developer</h2>
                 <p>JavaScript is the heart of modern web development, and I am an expert in harnessing its power. I have a deep understanding of JavaScript and its libraries, enabling me to deliver dynamic and interactive web applications. Whether it's implementing complex algorithms or optimizing performance, I use my JavaScript expertise to create seamless user interfaces and exceptional functionalities. I have provided my services to many renowned companies.</p>
@@ -85,7 +86,7 @@
         </section>
 
         <section class="two inverted">
-            <img class="imgTwo" src="res\front-end-developer.svg" alt="Talha Shaheen" loading="lazy">
+            <img class="imgTwo" src="res\front-end-developer.svg" alt="Talha Shaheen">
             <div class="textBoxTwo">
                 <h2>Front-end Web Developer</h2>
                 <p>Started my web development journey as a Front-end Web Developer, I can develop solid, scalable, user-friendly websites with pure coding
@@ -95,7 +96,7 @@
         </section>
 
         <section class="thre">
-            <img class="imgThree" src="res/back-end-developer.svg" alt="Talha Shaheen" loading="lazy">
+            <img class="imgThree" src="res/back-end-developer.svg" alt="Talha Shaheen">
             <div class="textBoxThree">
                 <h2>Back-end Web Developer</h2>
                 <p>Not only I make incredible front-ends but I can handle all the nifty stuff on the backend like server scripting, cloud management, and databases. Whether it's optimizing performance, implementing security measures, or scaling applications to handle heavy traffic, I have got you all covered.</p>
@@ -104,7 +105,7 @@
         </section>
 
         <section class="four inverted">
-            <img class="imgFour" src="res\wordpress-developer.svg" alt="Talha Shaheen" loading="lazy">
+            <img class="imgFour" src="res\wordpress-developer.svg" alt="Talha Shaheen">
             <div class="textBoxFour">
                 <h2>WordPress Developer</h2>
                 <p>When it comes to WordPress, I offer comprehensive WordPress services, including setup, theme installation, and customization. I am well-versed in popular page builders like Elementor and DIVI. Additionally, I optimize website speed, create AMP webpages, and implement on-page SEO techniques to enhance your site's performance and visibility.</p>
@@ -113,7 +114,7 @@
         </section>
 
         <section class="five">
-            <img class="imgFive" src="res\seo.svg" alt="Talha Shaheen" loading="lazy">
+            <img class="imgFive" src="res\seo.svg" alt="Talha Shaheen">
             <div class="textBoxFive">
                 <h2>SEO Expert</h2>
                 <p>Being a coder, a benefit I have is that I understand search engine algorithms and I can SEO any website either its WordPress site or pure coded site,  directly through source code editing (No goofy plugin or library required).</p>
@@ -129,7 +130,7 @@
             </div>
             <div class="resume-detail">
                 <div class="profile">
-                    <img src="res\profile.webp" alt="Talha Shaheen" loading="lazy">
+                    <img src="res\profile.webp" alt="Talha Shaheen">
                 </div>
                 <div>
                 <h2>Hi There! I'm Talha Shaheen</h2>
@@ -173,9 +174,6 @@
 
 
     </div>
-
-    <!-- scripts -->
-    <script src="js/3d.js" type="module"></script>
 
 </body>
 
@@ -261,11 +259,20 @@ for(let i = 0; i < click.length; i++){
     });
  }
 
- let promptBtn = document.querySelector(".promptBtn");
- promptBtn.addEventListener('click', function(){
-     maintenance.style.display = 'none';
-         blur.style.filter = 'blur(0px)';
-})
+//  let promptBtn = document.querySelector(".promptBtn");
+//  promptBtn.addEventListener('click', function(){
+//      maintenance.style.display = 'none';
+//          blur.style.filter = 'blur(0px)';
+// })
 
 </script>
+
+<script type="module" id="3d-script"></script>
+<script>
+    if (window.innerWidth > 800) {
+        var scriptElement = document.getElementById('3d-script');
+        scriptElement.setAttribute('src', 'js/3d.js');
+    }
+</script>
+
 </html>
