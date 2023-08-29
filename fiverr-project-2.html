@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Talha Shaheen">
+    <meta name="description" content="Portfolio website for Talha Shaheen">
+    <meta name="description" content="Im Talha Shaheen. Im a freelance javascript developer.">
+    <meta name="keywords" content="talha shaheen, talha, shaheen, klever talha, javascript developer, frontend developer developer">
+    <title>Talha Shaheen</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+    <style>
+        section {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            padding: 2% 5% 2% 5%;
+        }
+
+        .details {
+            background-color: rgb(247, 247, 247);
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            padding: 6% 5% 8% 6%;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        .preview {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: max-content;
+            padding: 4% 0%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            overflow-x: visible;
+            overflow-y: hidden;
+
+        }
+
+        iframe {
+            box-shadow: 2px black;
+        }
+
+        @media screen and (min-width: 640px) and (max-width: 800px) {
+            p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 2% 5% 2% 5%;
+            }
+
+            .details {
+                width: 100%;
+                border-radius: 30px;
+                padding: 6% 5% 8% 6%;
+            }
+
+            .preview {
+                width: 100%;
+                padding: 4% 0%;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1400px) {
+            p {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 2% 0% 2% 5%;
+                height: 100vh;
+                flex-direction: row;
+            }
+
+            .details {
+                width: 30%;
+                border-radius: 40px;
+                padding: 4% 2%;
+            }
+
+            .preview {
+                width: 70%;
+                margin-left: 2%;
+                padding: 4% 0%;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (min-width: 1400px) and (max-width: 1800px) {
+            p {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 2% 0% 2% 5%;
+                height: 100vh;
+                flex-direction: row;
+            }
+
+            .details {
+                width: 30%;
+                border-radius: 50px;
+                padding: 4% 2%;
+            }
+
+            .preview {
+                width: 70%;
+                margin-left: 2%;
+                padding: 4% 0%;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (min-width: 1800px) {
+            p {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 2% 0% 2% 5%;
+                height: 100vh;
+                flex-direction: row;
+            }
+
+            .details {
+                width: 30%;
+                border-radius: 50px;
+                padding: 4% 2%;
+            }
+
+            .preview {
+                width: 70%;
+                margin-left: 2%;
+                padding: 4% 0%;
+                gap: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <img class="loaderImg" src="res/loader.webp" alt="Talha Shaheen" title="javascript developer">
+        <div class="dots">
+            <div class="one dot"></div>
+            <div class="two dot"></div>
+            <div class="three dot"></div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span><span><a href="index.html">Klever Talha</a></span></span>
+            </div>
+            <div class="navLinks">
+                <a href="certificate.html">Certificates</a>
+                <a class="notice" href="projects.html">Projects</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="details">
+            <div class="heading">
+                <h1>Fiverr</h1>
+                <p>HTML5 ADS</p>
+            </div>
+            <p>I had the privilege of completing a project on Fiverr, where I collaborated with a Fiverr PPC Specialist. The project involved creating captivating animated HTML5 ads for their Google Ads campaign. Working closely with their skilled graphic design team, we successfully crafted a series of stunning and engaging advertisements. This project included total of 3 different ad sets. Check more:</p>
+            <p><a href="fiverr-project-1.html" style="color: blue;">Fiver-project-1</a></p>
+            <p><a href="fiverr-project-3.html" style="color: blue;">Fiver-project-3</a></p>
+        </div>
+        <div class="preview">
+            <div><iframe src="https://klever-talha-projects.github.io/fiverr/seo/300x600/index.html"
+                    frameborder="0"></iframe></div>
+            <div><iframe src="https://klever-talha-projects.github.io/fiverr/seo/160x600/index.html"
+                    frameborder="0"></iframe></div>
+            <div><iframe src="https://klever-talha-projects.github.io/fiverr/seo/300x250/index.html"
+                    frameborder="0"></iframe></div>
+            <div><iframe src="https://klever-talha-projects.github.io/fiverr/seo/728x90/index.html"
+                    frameborder="0"></iframe></div>
+            <div><iframe src="https://klever-talha-projects.github.io/fiverr/seo/970x250/index.html"
+                    frameborder="0"></iframe></div>
+        </div>
+    </section>
+</body>
+
+<script>
+    let iframe = document.querySelectorAll('iframe')
+    document.onselectstart = function () {
+        return false;
+    }
+    let loader = document.querySelector('.loader');
+    window.onload = function () {
+        setTimeout(() => {
+            loader.parentNode.removeChild(loader);
+        }, 1000);
+
+        for (let i = 0; i < iframe.length; i++) {
+            let iframeDimenssions = iframe[i].getAttribute("src").match(/\/(\d+)x(\d+)\//);
+
+            if (iframeDimenssions) {
+                let width = iframeDimenssions[1];
+                let height = iframeDimenssions[2];
+
+                iframe[i].style.width = width + "px";
+                iframe[i].style.height = height + "px";
+            }
+        }
+    };
+</script>
+
+</html>
