@@ -134,7 +134,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     border: solid 5px #f3f3f3;
-    padding: 1% 1%;
+    padding: 1.5% 1% 1% 1%;
   }
 
   .container>p{
